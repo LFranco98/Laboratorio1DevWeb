@@ -1,0 +1,76 @@
+body {
+    background: #313d52;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #313d52, #0e354e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #313d52, #0e354e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navegacion {
+    width: 1000px;
+    margin: 30px auto;
+    background: white;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px 0px 0px;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #5c5b5b;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #359ece;
+    transition: all .3s;
+}
+
+
+/* Submenu*/
+
+.submenu {
+    position: absolute;
+    background: #363333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    padding: 0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header__logo {
+    display: inline-block;
+    position: relative;
+    block-size: 30px;
+}
+
+.legend__titulo {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+}
